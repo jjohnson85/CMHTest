@@ -53,7 +53,7 @@ namespace CMHTest.InterviewCheck.Controller
 
                 NumberOfInterviewsResponse response = new NumberOfInterviewsResponse();
                 List<Candidate> candidates = await new GetCandidatesDelegate(m_httpClientFactory).GetCandidates();
-                response.numberofInterviews =  candidates.Where(c => c.dateOfInterview.Date.Equals(request.dateOfInterview.Date)).Count();
+                response.numberOfInterviews =  candidates.Where(c => c.dateOfInterview.Date.Equals(request.dateOfInterview.Date)).Count();
                 return Ok(response);
             }
             catch( Exception e )

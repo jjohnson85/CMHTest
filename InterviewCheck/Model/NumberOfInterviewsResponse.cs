@@ -4,7 +4,7 @@ namespace CMHTest.InterviewCheck.Model
 {
     public class NumberOfInterviewsResponse
     {
-        public int numberofInterviews { get; set; } = 0;
+        public int numberOfInterviews { get; set; } = 0;
     }
 }
 
